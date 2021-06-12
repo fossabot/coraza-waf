@@ -5,6 +5,10 @@ topnav:
   items:
     - title: GitHub
       external_url: https://github.com/jptosso/coraza-waf
+- title: Topnav
+  items:
+    - title: Api Documentation
+      external_url: https://pkg.go.dev/github.com/jptosso/coraza-waf    
 
 #Topnav dropdowns
 topnav_dropdowns:

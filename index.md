@@ -17,23 +17,19 @@ Please note Coraza is still a WIP.
 
 ## Prerequisites
 
-Follow these instructions to build the WAF.
-
-**Check Prerequisites**
-
 * Linux distribution (Debian and Centos are recommended, Windows is not supported)
 * Golang compiler v1.13+ (Note some wrappers like Caddy requires v1.16+)
 * libpcre-dev (``apt install libpcre++-dev`` for Ubuntu)
-* *CGO_ENABLED* environmental variable must be set to 1
+* **CGO_ENABLED** environmental variable must be set to 1
 * libinjection must be installed and linked
 
 You may install libinjection with the following command:
 
 {% highlight bash %}
 # Must be run as root
-sudo make libinjection
+sudo make deps
 {% endhighlight %}
-Note this command will compile and install libinjection to your *LIBRARY_PATH* and *LD_LIBRARY_PATH*.
+Note this command will compile and install libinjection to your **LIBRARY_PATH** and **LD_LIBRARY_PATH**.
 
 ## Running the test suite
 
@@ -67,6 +63,8 @@ go run cmd/testsuite/main.go -path ../coreruleset/tests/regression/tests/ -rules
 
 
 ## Your first Coraza WAF project
+
+Make sure ``CGO_ENABLED=1`` env is set before compiling and all dependencies are met.
 
 {% highlight go %}
 package main
@@ -132,6 +130,9 @@ We have currently achieved a 91% compatibility with OWASP CRS, some features are
 ### Custom Operators
 
 **@validateNid:** Validates national ID for many countries, replaces validateSSN.
+
+## Troubleshooting
+
 
 ## Useful links
 
