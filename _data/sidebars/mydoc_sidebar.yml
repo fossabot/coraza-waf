@@ -36,33 +36,17 @@ entries:
       url: /license.html
       output: web, pdf        
 
-  - title: Release Notes
+  - title: Development
     output: web, pdf
     folderitems:
 
-    - title: 0.1-pre Release notes
-      url: /release-0-1-pre.html
-      output: web, pdf
-
-  - title: Installation
-    output: web, pdf
-    folderitems:
-
-    - title: Install Coraza WAF on Linux
+    - title: Implementing Coraza WAF
       url: /mydoc_install_jekyll_on_windows.html
       output: web, pdf
 
-    - title: Coraza WAF Docker Container
+    - title: Extending Coraza WAF
       url: /mydoc_install_jekyll_on_windows.html
       output: web, pdf      
-
-    - title: Configuration examples
-      url: /mydoc_install_jesd_on_windows.html
-      output: web, pdf
-
-    - title: High Availability
-      url: /mydoc_install_jesd_on_windows.html
-      output: web, pdf
 
 
   - title: Configuration
@@ -71,10 +55,6 @@ entries:
     folderitems:
     - title: WAF Configuration Syntaxis
       url: /general-syntaxis.html
-      output: web, pdf
-
-    - title: Reverse Proxy Configuration
-      url: /reverse-proxy.html
       output: web, pdf
 
     - title: WAF Directives
@@ -121,15 +101,6 @@ entries:
       url: /regex.html    
       output: web, pdf      
 
-    - title: WAF Remote Resources
-      url: /remote-resources.html
-      output: web, pdf
-
-
-  - title: Logging
-    output: web, pdf
-
-    folderitems:
     - title: Log format
       url: /direcdtives.html
       output: web, pdf      
